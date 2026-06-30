@@ -17,13 +17,13 @@ jobs:
         distribution: temurin
         java-version: 11
 
-    # ✅ 关键修复：安装 CMake 3.18.1
+    
     - name: Setup CMake 3.18.1
       uses: jwlawson/actions-setup-cmake@v2
       with:
         cmake-version: '3.18.1'
 
-    # ✅ 验证 CMake 版本（可选，但强烈推荐）
+  
     - name: Verify CMake version
       run: cmake --version
 
